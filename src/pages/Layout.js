@@ -16,6 +16,12 @@ const Layout = () => {
                     <li>
                         <Link to="/contact">Contact</Link>
                     </li>
+                    <li>
+                        <Link to="/useeff">UseEff</Link>
+                    </li>
+                    <li>
+                        <Link to="/form" >Form</Link>
+                    </li>
                 </ul>
             </nav>
             {/* rendre l'itinéraire actuel selectionné */}

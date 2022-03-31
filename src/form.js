@@ -1,9 +1,9 @@
 import { useState } from "react";
-import ReactDOM from "react-dom";
 
 
-export default function Myform(){
-    //créer un hoock "useState", qui gère l'état du composant fonction "Myform"
+
+function Myform(){
+    //créer un hook "useState", qui gère l'état du composant fonction "Myform"
     const [inputs, setInputs] = useState({});
 
     // methode pour mettre à jour l'état du composant à partir des saisie
@@ -11,7 +11,8 @@ export default function Myform(){
     const handleChange = (event) =>{
         const name = event.target.name;
         const value = event.target.value;
-        // nous apportons les mises à jour au hoock du composant courant
+        // nous apportons les mises à jour au hoock du composant courant 
+        // on utilise le spread Operator dans la fonction pour garder les inputs precedents et en modifier seulement qu'une partie 
         setInputs(values => ({...values, [name]: value}));
     }
 
@@ -44,3 +45,4 @@ export default function Myform(){
     );
 }
 
+export default Myform;

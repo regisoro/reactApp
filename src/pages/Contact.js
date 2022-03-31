@@ -3,7 +3,7 @@
 const Contact = () => {
     return (
         <div>
-            <table className="table table.hover">
+            <table style={{border: "2px solid black"}}>
                 <thead>
                     <tr>
                         <td>Numero de téléphone</td>
